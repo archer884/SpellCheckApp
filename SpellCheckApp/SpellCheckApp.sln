@@ -1,16 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D7A6CED9-B050-4889-AB66-35440D3FE0E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A1DEB7A-818A-44EA-AE9A-EE7F32CE0782}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SpellCheckApp", "src\SpellCheckApp\SpellCheckApp.xproj", "{ABF513C6-FA13-4673-A529-A8EF0B104CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpellCheckApp", "src\SpellCheckApp\SpellCheckApp.csproj", "{ABF513C6-FA13-4673-A529-A8EF0B104CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellCheckApp.Test", "SpellCheckApp.Test\SpellCheckApp.Test.csproj", "{133B7465-0C9D-4BF4-9EEA-A2043B3A90D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,11 +21,16 @@ Global
 		{ABF513C6-FA13-4673-A529-A8EF0B104CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABF513C6-FA13-4673-A529-A8EF0B104CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABF513C6-FA13-4673-A529-A8EF0B104CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133B7465-0C9D-4BF4-9EEA-A2043B3A90D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133B7465-0C9D-4BF4-9EEA-A2043B3A90D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133B7465-0C9D-4BF4-9EEA-A2043B3A90D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133B7465-0C9D-4BF4-9EEA-A2043B3A90D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{ABF513C6-FA13-4673-A529-A8EF0B104CFC} = {D7A6CED9-B050-4889-AB66-35440D3FE0E8}
+		{133B7465-0C9D-4BF4-9EEA-A2043B3A90D4} = {D7A6CED9-B050-4889-AB66-35440D3FE0E8}
 	EndGlobalSection
 EndGlobal
