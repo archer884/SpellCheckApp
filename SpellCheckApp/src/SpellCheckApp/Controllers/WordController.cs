@@ -4,6 +4,7 @@ using SpellCheckApp.Services;
 
 namespace SpellCheckApp.Controllers
 {
+    [Route("api/word")]
     public class WordController : Controller
     {
         IDictionaryService _service;
@@ -13,7 +14,7 @@ namespace SpellCheckApp.Controllers
             _service = service;
         }
 
-        [HttpGet]
+        [HttpGet("{word}")]
         public IActionResult Get(string word)
         {
             if (_service.IsCorrect(word))
