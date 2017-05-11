@@ -5,8 +5,8 @@ namespace SpellCheckApp.Services
 {
     public class WordListDictionaryService : IDictionaryService
     {
-        private List<string> _words;
-        private ISuggestionProvider _suggestionProvider;
+        List<string> _words;
+        ISuggestionProvider _suggestionProvider;
 
         public WordListDictionaryService(ISuggestionProvider suggestionProvider, IEnumerable<string> words)
         {

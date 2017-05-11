@@ -8,8 +8,8 @@ namespace SpellCheckApp.Services
     /// </summary>
     public class CustomDictionaryService : IDictionaryService
     {
-        private Dictionary<string, List<string>> _mappings = new Dictionary<string, List<string>>();
-        private IDictionaryService _service;
+        Dictionary<string, List<string>> _mappings = new Dictionary<string, List<string>>();
+        IDictionaryService _service;
 
         public CustomDictionaryService(IDictionaryService service)
         {
@@ -21,8 +21,7 @@ namespace SpellCheckApp.Services
         {
             foreach (var item in mappingItems)
             {
-                List<string> value;
-                if (_mappings.TryGetValue(item.Key, out value))
+                if (_mappings.TryGetValue(item.Key, out List<string> value))
                 {
                     value.Add(item.Value);
                 }
@@ -40,8 +39,7 @@ namespace SpellCheckApp.Services
         // recommendations for exactly this case, and we want to return just those.
         public IEnumerable<string> Suggestions(string word)
         {
-            List<string> value;
-            if (_mappings.TryGetValue(word, out value))
+            if (_mappings.TryGetValue(word, out List<string> value))
             {
                 return value;
             }
